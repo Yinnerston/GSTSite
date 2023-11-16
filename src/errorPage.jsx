@@ -6,7 +6,7 @@ export default function ErrorPage() {
     console.error(error);
 
     return (
-        <div id="errorPage">
+        <div className="errorPage">
             <Header />
             <div className="appHeaderPadding"></div>
             <h1>Oops!</h1>

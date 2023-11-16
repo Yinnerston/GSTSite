@@ -84,8 +84,11 @@ h1, h2, h3, p {
 .headerAnchor {
   flex: 1;
   text-decoration: none !important;
-
 }
+.headerAnchor:hover {
+  background-color: #36454F	;
+}
+
 .headerAnchorText {
   text-align: center;
   color: white;
@@ -130,6 +133,38 @@ h1, h2, h3, p {
   flex: 54;
 }
 
+
+/* People Page */
+.peoplePage {
+
+}
+
+/* Publications Page */
+.publicationsPage {
+
+}
+
+/* Useful Links Page */
+.usefulLinksPage {
+
+}
+
+/* Events Page */
+.eventsPage {
+
+}
+
+/* Contact Page */
+.contactPage {
+
+}
+
+/* Error Page */
+.errorPage  {
+
+}
+
+/* Footer */
 .appFooter  {
   height: 100px;
   background-color: blue;
