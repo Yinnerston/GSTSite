@@ -98,6 +98,17 @@ h1, h2, h3, p {
   min-height: 100px; /* TODO: Fixed height based on screen sizze*/
 }
 
+.headingContainer {
+  height: 120px;  /* TODO: Adjust based on screensize*/
+  padding: 0px 20px 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #f5eb95;
+  text-align: center;
+}
+
 .App-link {
   color: #61dafb;
 }

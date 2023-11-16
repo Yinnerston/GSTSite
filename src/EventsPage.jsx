@@ -1,10 +1,10 @@
-import Header from "./components/header";
+import AppHeader from "./components/AppHeader";
 
 export default function EventsPage() {
 
     return (
         <div className="eventsPage">
-            <Header />
+            <AppHeader />
             <div className="appHeaderPadding"></div>
             <h1>Events</h1>
             <p>Go back to the homepage?</p>

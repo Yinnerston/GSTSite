@@ -1,12 +1,14 @@
-import Header from "./components/header";
+import AppHeader from "./components/AppHeader";
 
 export default function PeoplePage() {
 
     return (
         <div className="peoplePage">
-            <Header />
+            <AppHeader />
             <div className="appHeaderPadding"></div>
-            <h1>People</h1>
+            <div className="headingContainer">
+                <h1>People</h1>
+            </div>
             <p>Go back to the homepage?</p>
         </div>
     )

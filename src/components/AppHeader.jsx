@@ -11,7 +11,7 @@ Contact
 
  * @returns 
  */
-export default function Header() {
+export default function AppHeader() {
     return (
     <header className="App-header">
         <nav className="headerNav">

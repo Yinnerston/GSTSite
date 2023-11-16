@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Box, OrbitControls } from "@react-three/drei";
-import Header from "./components/header";
+import AppHeader from "./components/AppHeader";
 
 const Scene = () => {
   const boxRef = useRef();
@@ -23,7 +23,7 @@ const App = () => {
   return (
   <div className="App">
   <div className="appHeaderPadding"></div>
-  <Header />
+  <AppHeader />
   <main className="appBody">
     <section className="homepageMain">
       <Canvas className="homepageMainCanvas" camera={{ fov: 70, position: [0, 0, 3] }}>

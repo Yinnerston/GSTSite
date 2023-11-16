@@ -11,7 +11,7 @@ import PublicationsPage from "./PublicationsPage";
 import UsefulLinksPage from "./UsefulLinksPage";
 import EventsPage from "./EventsPage";
 import ContactPage from "./ContactPage";
-import ErrorPage from "./errorPage";
+import ErrorPage from "./ErrorPage";
 
 const router = createBrowserRouter([
     {
