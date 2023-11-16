@@ -4,6 +4,10 @@ _A simple React Three Fiber + Vite starter with an import-ready CodeSandbox conf
 
 ![Preview](/public/preview.gif)
 
+### Inspirations
+- https://threejs.org/examples/webgl_points_dynamic.html
+- https://hoskens-accountancy.be/
+
 ### Resources:
 
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/): Three.js Renderer
