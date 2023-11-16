@@ -53,12 +53,11 @@ h1, h2, h3, p {
 
 .App-header {
   background-color: #282c34;
-  min-height: 75px; /* TODO: Fixed height based on screen sizze*/
+  height: 100px; /* TODO: Fixed height based on screen sizze*/
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1000;
-  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -66,8 +65,34 @@ h1, h2, h3, p {
   color: white;
 }
 
+.headerNav  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.headerLogo {
+  flex: 1;
+  text-align: left;
+}
+.headerLinks  {
+  flex: 2;
+  display: flex;
+}
+.headerAnchor {
+  flex: 1;
+  text-decoration: none !important;
+
+}
+.headerAnchorText {
+  text-align: center;
+  color: white;
+}
+
 .appHeaderPadding {
-  min-height: 75px; /* TODO: Fixed height based on screen sizze*/
+  min-height: 100px; /* TODO: Fixed height based on screen sizze*/
 }
 
 .App-link {
