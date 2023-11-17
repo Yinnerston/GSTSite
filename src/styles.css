@@ -20,7 +20,6 @@ body,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  overflow: hidden;
   font-family: 'Univers', sans-serif;
 }
 
@@ -80,13 +79,29 @@ h1, h2, h3, p {
 .headerLinks  {
   flex: 2;
   display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.menuButton {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #36454F;
+  color: white;
+}
+.menuSidebar  {
+  position: fixed;
+  width: 50vmin;
+  height: calc(100% - 100px);
+  right: 0;
+  top: 100px; /* Change on header height */
+  background-color: #36454F;
 }
 .headerAnchor {
   flex: 1;
   text-decoration: none !important;
 }
 .headerAnchor:hover {
-  background-color: #36454F	;
+  background-color: gray	;
 }
 
 .headerAnchorText {
@@ -100,7 +115,7 @@ h1, h2, h3, p {
 
 .headingContainer {
   height: 120px;  /* TODO: Adjust based on screensize*/
-  padding: 0px 20px 0px;
+  padding: 0px 10vmin 0px;
   margin: 0px;
   display: flex;
   justify-content: left;
@@ -144,10 +159,40 @@ h1, h2, h3, p {
   flex: 54;
 }
 
+.pageContainer {
+  margin-right: 10vmin;
+  margin-left: 10vmin;
+}
 
 /* People Page */
 .peoplePage {
 
+}
+.peopleCardContainer  {
+  border-color: #282c34;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5vmin;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.peopleCardImage  {
+  min-width: 5%;
+  min-height: 5%;
+  margin: 25px;
+  border-radius: 25px;
+}
+.peopleCardImageContainer  {
+  flex: 1;
+}
+.peopleCardBody {
+  flex: 4;
 }
 
 /* Publications Page */

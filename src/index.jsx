@@ -12,6 +12,7 @@ import UsefulLinksPage from "./UsefulLinksPage";
 import EventsPage from "./EventsPage";
 import ContactPage from "./ContactPage";
 import ErrorPage from "./ErrorPage";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const router = createBrowserRouter([
     {
