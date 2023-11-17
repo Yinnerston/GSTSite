@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Box, OrbitControls } from "@react-three/drei";
 import AppHeader from "./components/AppHeader";
+import AppFooter from "./components/AppFooter";
 
 const Scene = () => {
   const boxRef = useRef();
@@ -47,10 +48,7 @@ const App = () => {
       </section>
     </article>
   </main>
-  <div className="appFooter">
-    <p>Legal disclaimer footer here</p>
-  </div>
-
+    <AppFooter />
 </div>
 
 );

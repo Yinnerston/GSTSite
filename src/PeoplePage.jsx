@@ -1,3 +1,4 @@
+import AppFooter from "./components/AppFooter";
 import AppHeader from "./components/AppHeader";
 import PeopleCard from "./components/PeopleCard";
 import placeholderImage from "/placeholder.jpg";
@@ -37,7 +38,52 @@ const PEOPLE = [
         policy. He has been a Fulbright Senior Scholar based in Washington DC and was the
         Founding Director of the Institute for Social Change at the University of Tasmania.`,
         links: ["https://discover.utas.edu.au/Richard.Eccleston"]
-    }
+    },
+    {
+        name: "Rick Krever",
+        image: placeholderImage,
+        bio: `Rick Krever is a professor at University of Western Australia Law School and an
+        international fellow at the Centre for Business Taxation at the University of Oxford. He is the
+        author of many research volumes, textbooks and journal articles. He has been seconded to
+        both the Commonwealth Treasury and Australian Taxation Office and international agencies
+        such as the International Monetary Fund and has provided tax and law design assistance for
+        organisations such as the World Bank and the Asian Development Bank as well as numerous
+        ministries of finance and treasury departments in Asia, Africa, the Pacific, the Caribbean and
+        Eastern European nations. Rick was made a Member of the Order of Australia in recognition
+        of his contributions to tax academia in Australia.`,
+        links: ["https://research-repository.uwa.edu.au/en/persons/rick-krever"]
+    },
+    {
+        name: "Lachlan Johnson",
+        image: placeholderImage,
+        bio: `Lachlan Johnson is a research fellow at the Tasmanian Policy Exchange (TPE) of the
+        University of Tasmania. He completed his PhD on the role of knowledge networks in
+        regional innovation clusters at the University of Tasmania in early 2021. While at the TPE, an
+        impact-focussed applied policy research centre at the University of Tasmania, Lachlan plays
+        a leading role in project design, data analysis and visualisation, research and writing, and
+        liaising with stakeholders. Lachlan has contributed extensively to the TPE’s work on the
+        Future of Local Government Review, analysis of greenhouse gas emissions data, and
+        Tasmanian transport decarbonisation policy.`,
+        links: ["https://discover.utas.edu.au/Lachie.Johnson"]
+    },
+    {
+        name: "Yan Xu",
+        image: placeholderImage,
+        bio: `Yan Xu is a Scientia Associate Professor of Tax Law at the University of New South Wales
+        (UNSW) and an Adjunct Associate Profession in the Faculty of Law at the University of
+        Hong Kong. Yan has been a Fulbright Senior Scholar and was based at Columbia Law School
+        as a Visiting Fellow in 2014-15. She has published in a range of international journals,
+        presented papers at high-level international conferences, made presentations on invitation
+        from prominent bodies, including the Commonwealth Treasury and International Fiscal
+        Association, and is often invited to act as referee for top-tier law journals and academic
+        books. Yan has successfully secured several highly competitive government grants including
+        Australian Research Council (ARC) Discovery Projects and Hong Kong Research Grants
+        Council General Research Fund grants (equivalent to ARC Discovery Projects). Her research
+        interests include comparative tax law and policy, international taxation and environment
+        taxation.`,
+        links: ["https://www.unsw.edu.au/staff/yan-xu"]
+    },
+
 ]
 
 export default function PeoplePage() {
@@ -50,9 +96,10 @@ export default function PeoplePage() {
                 <h1>People</h1>
             </div>
             <article className="pageContainer">
-                <h3>Chief Investigators</h3>
+                <h3 className="peopleChiefInvestigatorHeader">Chief Investigators</h3>
                 {peopleCards}
             </article>
+            <AppFooter />
         </div>
     )
 }
