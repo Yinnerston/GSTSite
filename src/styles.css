@@ -162,6 +162,7 @@ h1, h2, h3, p {
 .pageContainer {
   margin-right: 10vmin;
   margin-left: 10vmin;
+  flex: 1;
 }
 
 /* People Page */
@@ -202,7 +203,8 @@ h1, h2, h3, p {
 
 /* Publications Page */
 .publicationsPage {
-
+  display: flex;
+  flex-direction: column;
 }
 
 /* Useful Links Page */
@@ -229,6 +231,7 @@ h1, h2, h3, p {
 .appFooter  {
   height: 100px;
   background-color: blue;
+  bottom: 0;
 
 }
 /* * {
