@@ -11,6 +11,7 @@ import PublicationsPage from "./PublicationsPage";
 import UsefulLinksPage from "./UsefulLinksPage";
 import EventsPage from "./EventsPage";
 import ContactPage from "./ContactPage";
+import CanvasPage from "./CanvasPage";
 import ErrorPage from "./ErrorPage";
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
     {
         path: "/Contact",
         element: <ContactPage />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/Canvas",
+        element: <CanvasPage />,
         errorElement: <ErrorPage />
     },
 ])

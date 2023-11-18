@@ -7,6 +7,7 @@ _A simple React Three Fiber + Vite starter with an import-ready CodeSandbox conf
 ### Inspirations
 - https://threejs.org/examples/webgl_points_dynamic.html
 - https://hoskens-accountancy.be/
+- Australia Map - Low Poly - Bharad : https://sketchfab.com/3d-models/australia-map-low-poly-d65c2851cdb342e2bf498e411572ac4f
 
 ### Resources:
 
