@@ -85,8 +85,8 @@ h1, h2, h3, p {
 .menuButton {
   border-radius: 5px;
   padding: 10px;
-  background-color: #36454F;
-  color: white;
+  background-color: #fdcd0d;
+  color: #36454F;
 }
 .menuSidebar  {
   position: fixed;

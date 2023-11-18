@@ -49,7 +49,7 @@ export default function AppHeader() {
         <nav className="headerNav">
             <div className="headerLogo">
                 <a href="/">
-                    LOGO
+                    Building Sustainable Federalism
                 </a>
             </div>
             <div className="headerLinks">
