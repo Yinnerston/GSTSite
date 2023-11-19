@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "Univers";
+  src: url("Univers.woff#45");
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Univers', sans-serif;
+}
+
+h1, h2, h3, p {
+  -moz-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.homepageMainCanvas {
+  flex: 1;  /* TODO: Min height based on screen size*/
+  min-height: 300px;
+  background-color: orange;
+}
+
+.homepageHeadingText {
+  flex: 1;  /* TODO: Min height based on screen size*/
+  min-height: 300px;
+  background-color: navy;
+}
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 100px; /* TODO: Fixed height based on screen sizze*/
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.headerNav  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.headerLogo {
+  flex: 1;
+  text-align: left;
+}
+.headerLinks  {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.menuButton {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fdcd0d;
+  color: #36454F;
+}
+.menuSidebar  {
+  position: fixed;
+  width: 50vmin;
+  height: calc(100% - 100px);
+  right: 0;
+  top: 100px; /* Change on header height */
+  background-color: #36454F;
+}
+.headerAnchor {
+  flex: 1;
+  text-decoration: none !important;
+}
+.headerAnchor:hover {
+  background-color: gray	;
+}
+
+.headerAnchorText {
+  text-align: center;
+  color: white;
+}
+
+.appHeaderPadding {
+  min-height: 100px; /* TODO: Fixed height based on screen sizze*/
+}
+
+.headingContainer {
+  height: 120px;  /* TODO: Adjust based on screensize*/
+  padding: 0px 10vmin 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #f5eb95;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.appBody  {
+  flex: 1;
+  background-color: white;
+}
+
+.homepageMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepageMissionStatement {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.homepageMissionStatementHeadings {
+  flex: 46;
+  background-image: url("/background-circles.svg");
+  background-repeat: repeat;
+  background-size: 17px auto;
+  background-position: center center;
+
+}
+
+.homepageMissionStatementBodies {
+  flex: 54;
+}
+
+.pageContainer {
+  margin-right: 10vmin;
+  margin-left: 10vmin;
+  flex: 1;
+}
+
+/* People Page */
+.peoplePage {
+
+}
+.peopleChiefInvestigatorHeader  {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.peopleCardContainer  {
+  border-color: #282c34;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5vmin;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.peopleCardImage  {
+  min-width: 5%;
+  min-height: 5%;
+  margin-right: 25px;
+  border-radius: 25px;
+}
+.peopleCardImageContainer  {
+  flex: 1;
+}
+.peopleCardBody {
+  flex: 4;
+}
+
+/* Publications Page */
+.publicationsPage {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Useful Links Page */
+.usefulLinksPage {
+
+}
+
+/* Events Page */
+.eventsPage {
+
+}
+
+/* Contact Page */
+.contactPage {
+
+}
+
+/* Error Page */
+.errorPage  {
+
+}
+
+/* Footer */
+.appFooter  {
+  height: 100px;
+  background-color: blue;
+  bottom: 0;
+
+}
+/* * {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+#root {
+  overflow: auto;
+}
+
+body {
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+}
+
+.approot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  background-color: red;
+}
+
+header {
+
+}
+
+.appbody  {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  background-color: white;
+}
+
+.appfooter  {
+ 
+} */
